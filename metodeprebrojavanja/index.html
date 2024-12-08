@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap" rel="stylesheet">
+        <link rel="icon" type="image/x-icon" href="./favicon.ico">
+        <title>Metode prebrojavanja</title>
+    </head>
+    <body>
+        <div class="head">
+            <div class="naslov">
+                <h1>Metode prebrojavanja</h1>
+                <p class="credits"> Created by Luka Bedić & Fran Klanac</p>
+                <p class="credits">Napravljeno u svrhu projektnog zadatka.</p>
+            </div>
+        </div>
+
+        <div class="glavni">
+            <div class="upis2">
+                <h2 class="porukaUpisa">Koliko broj mora imati n znamenaka?</h2>
+                <input type="number" id="znamenke" class="znamenke skup">
+            </div>
+        </div>
+
+        <div class="glavni">
+            <div class="upis">
+                <h2 class="porukaUpisa">Upiši skup brojeva</h2>
+                <p class="uputaUpisa">(npr. 8, 9, 0, 1)</p>
+                <form action="">
+                    <input type="text" id="skup" class="skup">
+                </form>
+            </div>
+        </div>
+
+        <div class="glavni">
+            <div class="upis2">
+                <h2 class="porukaUpisa">Želiš li da se znamenke ponavljaju ili ne?</h2>
+                <form action="">
+                    <input type="radio" name="ponavljanje" id="ponDa">Da
+                    <input type="radio" name="ponavljanje" id="ponNe">Ne
+                </form>
+            </div>
+        </div>
+
+        <div class="glavni">
+            <form action="" id="izracunaj">
+                <button class="izracunaj">Izračunaj</button>
+            </form>
+        </div>
+
+        <div class="glavni">
+            <div class="ispis" id="ispis">
+                
+            </div>
+        </div>
+
+        <script src="index.js"></script>
+    </body>
+</html>
