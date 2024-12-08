@@ -1,4 +1,4 @@
-*{
+* {
     font-family: Kanit;
 }
 
@@ -8,7 +8,7 @@ h1 {
     margin-top: 10px;
 }
 
-html{
+html {
     display: flex;
     justify-content: center;
 }
@@ -16,80 +16,76 @@ html{
 body {
     background-color: #f0dbaf;
     width: 50%;
+    margin: 0 auto;
+    padding: 10px;
 }
 
-.naslov{
+.naslov {
     text-align: center;
 }
 
-.head{
+.head {
     display: flex;
     justify-content: center;
     margin: 10px;
-    padding: 10px;
-    padding-left: 20px;
-    padding-right: 20px;
+    padding: 10px 20px;
     border-radius: 20px;
     background-color: #f4d19d;
     box-shadow: 0px 4px 10px black;
 }
 
-.credits{
+.credits {
     font-weight: 400;
     font-size: 12px;
 }
 
-.upis{
+.upis {
     text-align: center;
     display: block;
     margin-top: 20px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 10px 40px;
     border-radius: 20px;
     background-color: #f4d19d;
     box-shadow: 0px 4px 10px black;
 }
 
-.skup{
+.skup {
     border: none;
     border-radius: 20px;
     padding: 10px;
     font-size: 12px;
 }
 
-.porukaUpisa{
+.porukaUpisa {
     color: #14244d;
     margin-bottom: 0px;
 }
 
-.uputaUpisa{
+.uputaUpisa {
     margin-top: 0px;
     font-size: 12px;
 }
 
-.glavni{
+.glavni {
     display: flex;
     justify-content: center;
 }
 
-.upis2{
+.upis2 {
     text-align: center;
     display: block;
     margin-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
     border-radius: 20px;
     background-color: #f4d19d;
     box-shadow: 0px 4px 10px black;
 }
 
-.znamenke{
+.znamenke {
     margin-top: 10px;
 }
 
-.izracunaj{
+.izracunaj {
     margin-top: 20px;
     background-color: gainsboro;
     padding: 10px;
@@ -100,14 +96,74 @@ body {
     opacity: 1;
 }
 
-.izracunaj:hover{
+.izracunaj:hover {
     opacity: 0.7;
 }
 
-.ispis{
+.ispis {
     visibility: hidden;
 }
 
-h3{
+h3 {
     color: #14244d;
+}
+
+/* Responsive Design */
+
+@media (max-width: 1024px) {
+    body {
+        width: 70%;
+    }
+
+    .head,
+    .upis,
+    .upis2 {
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 90%;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .head,
+    .upis,
+    .upis2 {
+        padding: 10px;
+    }
+
+    .izracunaj {
+        font-size: 18px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .credits {
+        font-size: 10px;
+    }
+
+    .skup {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .izracunaj {
+        font-size: 16px;
+        padding: 8px;
+    }
 }
